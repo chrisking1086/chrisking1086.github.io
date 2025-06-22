@@ -1,41 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chris King's Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; text-align: center; }
-        .container { max-width: 800px; margin: auto; }
-        .artifact { border: 1px solid #ccc; padding: 20px; margin: 20px 0; }
-        a { text-decoration: none; color: #0073e6; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        h1,
+        h3 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-top: 15px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            margin-top: 40px;
+        }
+
+        .narrative {
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            text-align: justify;
+            line-height: 1.7;
+            padding: 20px 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .narrative h4 {
+            color: #007acc;
+            font-size: 1.2em;
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+            border-bottom: 1px dashed #e0e0e0;
+            padding-bottom: 5px;
+        }
+
+        .narrative ul {
+            list-style-type: disc;
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        .narrative ul li {
+            margin-bottom: 8px;
+        }
+
+        .screenshots {
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            text-align: center;
+            line-height: 1.7;
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        a {
+            display: inline-block;
+            margin: 30px auto 40px auto;
+            padding: 12px 25px;
+            background-color: #007acc;
+            color: #ffffff;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        a:hover {
+            background-color: #005f99;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        img {
+            display: block;
+            max-width: 800px;
+            width: 100%;
+            margin: 30px auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            font-weight: bold;
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+            color: #2c3e50;
+        }
+
+        .content-wrapper {
+            max-width: 900px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            padding: 20px;
+        }
     </style>
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>My Portfolio</h1>
-        <p>Portfolio Overview:</p>
+    <div class="content-wrapper">
+        <h1>Chris King</h1>
+        <div class="narrative">
+            <h2>Portfolio Overview</h2>
+            <p>
+                About myself
+            <p>
+                This portfolio contains a Professional Self-Assessment that reflects on his SNHU coursework, key skills
+                developed
+                (teamwork, communication, security), and professional aspirations.
+            </p>
 
-        <div class="artifact">
-            <h2>Artifact 1: Scheduler</h2>
-            <p>Short description of the project.</p>
-            <a href="LINK_TO_PROJECT">View Project</a>
-        </div>
-
-        <div class="artifact">
-            <h2>Artifact 2: Rescue Animal service with binary search tree</h2>
-            <p>Short description of the project.</p>
-            <a href="LINK_TO_PROJECT">View Project</a>
-        </div>
-
-        <div class="artifact">
-            <h2>Artifact 3: Scheduler Database</h2>
-            <p>Short description of the project.</p>
-            <a href="LINK_TO_PROJECT">View Project</a>
-        </div>
+            <p class="question">
+            I am showcasing three technical artifacts: 
+            </p>
+            <ul>
+                <li>
+                    An enhanced Java Scheduler application (Artifact 1) demonstrating software engineering principles, robust GUI development, and an MVC architecture.
+                </li>
+                <li>
+                    A C++ Rescue Animal Service (Artifact 2) highlighting expertise in algorithms and data structures, specifically the performance benefits of a Binary Search Tree.
+                </li>
+                <li>
+                    A detailed Database design (Artifact 3) for the Scheduler application, emphasizing data persistence, scalability, and security considerations.
+                </li>
+             </ul>
         
+
+            <p> Collectively, these projects illustrate a strong foundation in software development, problem-solving,
+                and practical application of
+                computer science theory.</p>
+            </p>
+        </div>
+
+        <div class="narrative">
+            <h2>Professional Self-Assessment</h2>
+            <p>
+                This Professional Self-Assessment content presents a professional self-assessment for a Computer Science
+                student, reflecting on
+                how their SNHU coursework has shaped their skills and professional goals. It serves as an introduction
+                to their ePortfolio, highlighting strengths in teamwork, communication, data structures, software
+                engineering, databases, and security, exemplified by the linked technical artifacts.
+            </p>
+            <a href="self-assessment.html">View Self-Assessment</a>
+        </div>
+
+        <div class="narrative">
+            <h2>Artifact 1: Scheduler</h2>
+            <p>
+                Artifact 1: Software Engineering and Design Enhancement details a Java-based Scheduler
+                application that evolves from a basic data management tool to a comprehensive system featuring a robust
+                Swing GUI and integrated database for persistent storage of appointments, tasks, employees, and
+                customers, all designed with an MVC architecture. It showcases the development of a secure, scalable
+                application through object modeling, CRUD operations via service classes, and a user-friendly interface.
+            </p>
+            <a href="/artifact1.html">View Project</a>
+        </div>
+
+        <div class="narrative">
+            <h2>Artifact 2: Rescue Animal service with binary search tree</h2>
+            <p>
+                Artifact 2: Algorithms and Data Structures is an enhanced C++ port of a Java Rescue
+                Animal Service application originally from IT-145. It showcases the implementation of a Binary Search
+                Tree (BST) for efficient animal record management, contrasting its performance with a linear search to
+                highlight the benefits of optimized data structures.
+            </p>
+            <a href="/artifact2.html">View Project</a>
+        </div>
+
+        <div class="narrative">
+            <h2>Artifact 3: Scheduler Database</h2>
+            <p>
+                Artifact 3: Database details the design and implementation of a database system for the Java Scheduler
+                application (Artifact 1), shifting from in-memory storage to a persistent solution. It outlines an MVC
+                architecture with specific tables and service classes for managing appointments, tasks, employees, and
+                customers, emphasizing features for scalability and data security.
+            </p>
+            <a href="artifact3.html">View Project</a>
+        </div>
+
+        <div class="narrative">
+            <h2>Code Review</h2>
+            <p>Code Review Video: Details the original working copies of the artifacts prior to the enhancements.</p>
+            <a href="https://youtu.be/Gpph1ii5-rk" target="_blank">Code Review part 1</a>
+            <a href="https://youtu.be/TNptAoLRE54" target="_blank">Code Review part 2</a>
+        </div>
+
     </div>
 
 </body>
+
 </html>
