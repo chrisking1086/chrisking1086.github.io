@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris King's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        h1,
+        h3 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-top: 15px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            margin-top: 40px;
+        }
+
+        .narrative {
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            text-align: justify;
+            line-height: 1.7;
+            padding: 20px 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .narrative h4 {
+            color: #007acc;
+            font-size: 1.2em;
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+            border-bottom: 1px dashed #e0e0e0;
+            padding-bottom: 5px;
+        }
+
+        .narrative ul {
+            list-style-type: disc;
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        .narrative ul li {
+            margin-bottom: 8px;
+        }
+
+        .screenshots {
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            text-align: center;
+            line-height: 1.7;
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        a {
+            display: inline-block;
+            margin: 30px auto 40px auto;
+            padding: 12px 25px;
+            background-color: #007acc;
+            color: #ffffff;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        a:hover {
+            background-color: #005f99;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        img {
+            display: block;
+            max-width: 800px;
+            width: 100%;
+            margin: 30px auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            font-weight: bold;
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+            color: #2c3e50;
+        }
+
+        .content-wrapper {
+            max-width: 900px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <h1>Project 3: Database</h1>
+        <h3>Original Project: Appointment, Task and Contact</h3>
+        <div class="narrative">
+            <p>
+                For this final project in this portfolio, the original project was an excersice on utilizing data structures to build objects and manipulate them with a service class, then running automated tests to ensure proper storage. 
+                It was originally a very simple project that contained three objects classes and three service classes.
+                The objects were created and saved into a list through the service class. 
+                The course was heavily focused on automated testing, object building and object manipulation. 
+                Since the original project did not use a database, the data was not persistent. 
+                To improve upon the application, I chose to implement a database.
+            </p>
+            <a href="https://github.com/chrisking1086/SNHU-CS320" target="_blank">View Project on GitHub</a>
+        </div>
+        <h3>Narrative Describing Project and Planned Enhancements</h3>
+        <div class="narrative">
+            <p class="question">1. Briefly describe the project. What is it? When was it created?</p>
+            <p>
+                For the database category I decided to create a database to integrate with my category one project, the
+                Scheduler app. So far, I have created the database, and I have begun finishing the implementation into
+                the Scheduler app. There was no original database for this application, instead the data was stored in
+                array lists and was not saved anywhere. This resulted in no persistent data so to provide both
+                persistence and scalability of an appointment management application I created a database for the
+                various types of data that needed stored.
+            </p>
+            <p>
+                Ultimately however, I changed the database being used for the Scheduler application from MySQL to
+                SQLite, as this would more appropriately fit the audience of that application. The rest of this
+                description is for a database that was never used, but could be used if the Scheduler application was to
+                be altered for a larger scope.
+            </p>
+
+            <p class="question">2. Justify the inclusion of the project in your ePortfolio.</p>
+            <p>
+                The reason I selected this project for my ePortfolio is it displays my ability to enhance an
+                application through combining previously established software with more efficient and effective storage
+                of data. By designing and implementing a MySQL database schema and combining it with Java to make a
+                complete application, I am demonstrating my skills and abilities with both the SQL language, database
+                design and Java programming.
+            </p>
+            <p class="question">3. Did you meet the course outcomes?</p>
+            <p>
+                In module one, the category three enhancement was meant to meet the following course outcome:
+            </p>
+            <ul>
+                <li>
+                    Develop a security mindset that anticipates adversarial exploits in software architecture and
+                    designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced
+                    security of data and resources.
+                </li>
+            </ul>
+            <p>
+                To accomplish this course outcome, I am implementing password encryption, input validation and
+                protections against SQL injection. I have different access levels to the database, based on the type of
+                employee to only allow authorized users and administrators to interact with the database. By validating
+                the values prior to storage the design will help prevent erroneous data from being stored in the
+                database.
+                This project is still a work in progress since it is also going to be used for Category 3 of this
+                course. It is on track to meet the enhancements that I had planned at the beginning of the course. All
+                of the GUI components have been finished and when I create the database for the application, I will
+                finish the remaining components to present the appointment, customer accounts, employee accounts and
+                tasks to the user.
+            </p>
+            <p class="question">4. Reflect on the process of enhancing and modifying the project.</p>
+            <p>
+                Below is the implemented schema and the original database schema from module 1. I changed the customer
+                table to remove the username and password since the scheduling application will only be for the workers
+                to use. It is not needed for the customer. There were no challenges in making the database, but it is
+                taking longer than I originally thought incorporating it into the overall application. This is the first
+                time I have used Java Swing and JDBC to create an application. I was originally planning on managing all
+                connections to the database through a database Helper class, but as I have been implementing the
+                database connections, I have changed the connections to the individual service classes (Employee,
+                Appointment, Tasks and Customer) with the database helper class managing the creation of the tables.
+                This allows for better adherence to the Single Responsibility Principle, better scalability and better
+                maintainability.
+            </p>
+            <a href="https://github.com/chrisking1086/Scheduler" target="_blank">View Project on GitHub</a>
+        </div>
+
+        <h3>Description of the enhanced project</h3>
+        <div class="narrative">
+            <p>
+                The scheduler program uses a Model View Controller (MVC) architecture which consists of object Models
+                for each object type, and the tables of the database reflect those data types:
+            </p>
+            <ul>
+                <li>
+                    Appointments table: Holds the appointment information
+                </li>
+                <ul>
+                    <li>
+                        appointment_id: This acts as the unique id for each appointment. It is the primary key for the
+                        table and is unique due to the auto_increment parameter.
+                    </li>
+                    <li>
+                        employee_id: A foreign key used to associate an employee assigned to appointment.
+                    </li>
+                    <li>
+                        customer_id: Another foreign key used to associate a customer with the appointment.
+                    </li>
+                    <li>
+                        date_time: A dateTime feild type for storing the appointment time.
+                    </li>
+                    <li>
+                        appointment_desc: Holds appointment details.
+                    </li>
+                    <li>
+                        appointment_title: A short description for quick reference.
+                    </li>
+                </ul>
+                <li>
+                    Tasks table: Holds the predefined tasks, allowing for assignment to appointments
+                </li>
+                <ul>
+                    <li>
+                        task_id: Unique id Primary key that is used to assign tasks to appointments.
+                    </li>
+                    <li>
+                        task_description: A description of the task.
+                    </li>
+                    <li>
+                        task_status: Provides a way to track the status of the task; Complete, In Progress or Not
+                        Started.
+                    </li>
+                </ul>
+                <li>
+                    Employees table: Holds the information pertinent to the employee's. This includes the login in
+                    creditials and their supervisory status. The supervisory status could be used for access control in
+                    the future.
+                </li>
+                <ul>
+                    <li>
+                        employee_id: Unique id primary key that auto_increments and is used assign employee's to
+                        appointments.
+                    </li>
+                    <li>
+                        username: Unique username used for logging employee into the system.
+                    </li>
+                    <li>
+                        hashed_password: Passwords are hashed using SHA-256 hashing prior to being stored in database.
+                    </li>
+                    <li>
+                        first_name: Employee's first name.
+                    </li>
+                    <li>
+                        last_name: Employee's last name.
+                    </li>
+                    <li>
+                        email: Store employee's email.
+                    </li>
+                    <li>
+                        position: To destinquish between management and workers, for access control later if desire.
+                    </li>
+                </ul>
+                <li>
+                    Customers table: Holds the information pertinent to the customer, allowing for assignment to a new
+                    appointment.
+                </li>
+                <ul>
+                    <li>
+                        customer_id: Unique auto_incremented primary key that is used to assign customers to
+                        appointments.
+                    </li>
+                    <li>
+                        first_name: Customers first name.
+                    </li>
+                    <li>
+                        last_name: Customers last name.
+                    </li>
+                    <li>
+                        phone_number: Customers phone number.
+                    </li>
+                    <li>
+                        address: Customers address, could later be used for billing purposes if desired.
+                    </li>
+                </ul>
+                <li>
+                    AppointmentTasks table: Acts as a bridge between the appointments and tasks table, used for
+                    assigning the appointment with tasks.
+                </li>
+                <ul>
+                    <li>
+                        appointment_id: Foreign key used to link appointments to tasks.
+                    </li>
+                    <li>
+                        task_id: Foreign key used to link tasks to appointments.
+                    </li>
+                </ul>
+            </ul>
+            <p>
+                Each of these tables has a service class that handles interaction with the database. They are
+                responsible for the Create, Read, Update and Delete (CRUD) functionality:
+            <ul>
+                <li>
+                    Appointment Service: Used to manage the data in the appointments table. Also used for assigning
+                    tasks to appointments.
+                </li>
+                <li>
+                    Task Service: Used to manage the individual tasks.
+                </li>
+                <li>
+                    Employee Service: Used to manage retrieval of employee data, including login creditials.
+                </li>
+                <li>
+                    Customer Service: Used to manage retrieval of customer data.
+                </li>
+                <li>
+                    DatabaseHelper - For creating the tables upon initial use.
+                </li>
+                <li>
+                    Login Service: Interacts with the employee service and employees table to validate user information.
+                </li>
+            </ul>
+            </p>
+            <p>
+                The database schema. Below is the layout of the database:
+            </p>
+            <img src="images/project3 images/Database Schema.png">
+        </div>
+
+        <div class="screenshots">
+            <h3>Screenshots of Enhanced project</h3>
+            <img src="images/project3 images/Screenshot 2025-06-06 143722.png"
+                alt="Screenshot of Main Application Screen">
+
+            <img src="images/project3 images/Screenshot 2025-06-06 143732.png"
+                alt="Screenshot of Add Appointment function">
+            <p>
+                An overview of all the tables build for the database.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

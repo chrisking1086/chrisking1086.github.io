@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris King's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        h1,
+        h3 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-top: 15px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            margin-top: 40px;
+        }
+
+        .narrative {
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            text-align: justify;
+            line-height: 1.7;
+            padding: 20px 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .narrative h4 {
+            color: #007acc;
+            font-size: 1.2em;
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+            border-bottom: 1px dashed #e0e0e0;
+            padding-bottom: 5px;
+        }
+
+        .narrative ul {
+            list-style-type: disc;
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        .narrative ul li {
+            margin-bottom: 8px;
+        }
+
+        .screenshots {
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            text-align: center;
+            line-height: 1.7;
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        a {
+            display: inline-block;
+            margin: 30px auto 40px auto;
+            padding: 12px 25px;
+            background-color: #007acc;
+            color: #ffffff;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        a:hover {
+            background-color: #005f99;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        img {
+            display: block;
+            max-width: 800px;
+            width: 100%;
+            margin: 30px auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            font-weight: bold;
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+            color: #2c3e50;
+        }
+
+        .content-wrapper {
+            max-width: 900px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <h1>Project 1: Software Engineering and Design Enhancement</h1>
+        <h3>Original Project: Appointment, Task and Contact</h3>
+        <div class="narrative">
+            <p>
+                For this first project, the original project was an excersice on utilizing data structures to build
+                objects and manipulate them with a service class, then running automated tests to ensure proper storage.
+                It was originally a very simple project that contained three objects classes and three service classes.
+                The objects were created and saved into a list through the service class. The course was heavily focused
+                on automated testing, object building and object manipulation.
+            </p>
+            <a href="https://github.com/chrisking1086/SNHU-CS320" target="_blank">View Project on GitHub</a>
+        </div>
+        <h3>Narrative Describing Project and Planned Enhancements</h3>
+        <div class="narrative">
+            <p class="question">1. Briefly describe the project. What is it? When was it created?</p>
+            <p>
+                The project that I am using for this category is Project 1 from CS320. The purpose of the application
+                was to create Appointments, Contacts and Tasks and set up automated tests to ensure that the software
+                was working properly. The project included object classes to construct the objects (Appointments,
+                Contacts, and Tasks) and service classes to manage lists of these objects. It was created on December
+                7th, 2024.
+            </p>
+
+            <p class="question">2. Justify the inclusion of the project in your ePortfolio.</p>
+            <p>
+                The reason I chose this project for my ePortfolio was due to the fact that it was not a complete
+                application and I saw room for expansion. The structure of the application and the current storage
+                structure for the data could easily be improved with the addition of a user interface and a database.
+                Some of the structures needed reworked and adding a database and GUI would serve to showcase my skills
+                in the parameters of Software Design and Engineering. There were places to increase security with user
+                accounts and encrypted passwords and better input validation.
+            </p>
+
+            <p class="question">3. Did you meet the course outcomes?</p>
+            <p>
+                This project is still a work in progress since it is also going to be used for Category 3 of this
+                course. It is on track to meet the enhancements that I had planned at the beginning of the course. All
+                of the GUI components have been finished and when I create the database for the application, I will
+                finish the remaining components to present the appointment, customer accounts, employee accounts and
+                tasks to the user.
+            </p>
+
+            <p class="question">4. Reflect on the process of enhancing and modifying the project.</p>
+            <p>
+                I have never created a GUI for a Java application and I had to learn how to create swing GUI structures
+                for this project. I think learning how to create workable user interfaces with swing was the biggest
+                obstacle to hurdle. I went from not knowing how to create anything in swing to creating the user
+                interface, dialogs and list displays for this project. It was challenging to create each of the dialogs
+                and fields required to create the kind of UI that would serve this project.
+            </p>
+
+            <a href="https://github.com/chrisking1086/Scheduler" target="_blank">View Project on GitHub</a>
+        </div>
+
+        <h3>Description of the enhanced project</h3>
+        <div class="narrative">
+            <p>The scheduler program uses a Model View Controller (MVC) architecture which consists of object Models for
+                each object type:
+            </p>
+            <ul>
+                <li>
+                    Appointments
+                </li>
+                <li>
+                    Tasks
+                </li>
+                <li>
+                    Employees
+                </li>
+                <li>
+                    Customers
+                </li>
+            </ul>
+            <p>
+                Each of these objects has a service class that handles interaction with the database. They are
+                responsible for the Create, Read, Update and Delete (CRUD) functionality:
+            <ul>
+                <li>
+                    Appointment Service
+                </li>
+                <li>
+                    Task Service
+                </li>
+                <li>
+                    Employee Service
+                </li>
+                <li>
+                    Customer Service
+                </li>
+                <li>
+                    DatabaseHelper - For creating the tables upon initial use.
+                </li>
+                <li>
+                    Login Service - For authentication
+                </li>
+            </ul>
+            </p>
+            <p>
+                The View(GUI) for the application was built using Java Swing and consists of:
+            <ul>
+                <li>
+                    Main Screen - Consists of a list of current appointments and the main menu items for navigation.
+                </li>
+                <li>
+                    Management Dialogs - Each object type has a corresponding Management Dialog that allows the user to
+                    view the records in the database, choose one and open the edit screen for that object.
+                </li>
+                <li>
+                    Add Item Dialogs - The different item types (Appointment, Customer, Employee and Tasks) have add
+                    screens unique to each type.
+                </li>
+                <li>
+                    Edit Item Dialogs - Along with the add item dialogs, each item type has an edit dialog.
+                </li>
+            </ul>
+            </p>
+        </div>
+
+        <div class="screenshots">
+            <h3>Screenshots of Enhanced project</h3>
+            <img src="images/project1 images/MainScreenImage.png" alt="Screenshot of Main Application Screen">
+            <p>
+                The Main Screen of the Scheduler Application. Displays a list of current appointments.
+            </p>
+
+            <img src="images/project1 images/addAppointmentNewTask.png" alt="Screenshot of Add Appointment function">
+            <p>
+                The add new appointment function allows the user to set up a new appointment, create a new customer or
+                task if required and save that to the database.
+            </p>
+
+            <img src="images/project1 images/addCustomerImage.png" alt="Screenshot of add Customer function">
+            <p>
+                The add customer function takes customers information and adds it to the database
+            </p>
+
+            <img src="images/project1 images/addEmployeeImage.png" alt="Screenshot of add employee function">
+            <p>
+                The add employee function takes new employee information, hashes the password and adds it to the
+                database.
+                once an employee has set up a login they are able to login to the applicaiton.
+            </p>
+
+            <img src="images/project1 images/addTaskAddAppointment.png"
+                alt="Screenshot of add new task from add new appointment screen">
+            <p>
+                You can access the add task or add customer functions through the add appointment dialog or directly
+                from the menu on the main screen.
+            </p>
+
+            <img src="images/project1 images/manageTaskImage.png">
+            <p>
+                The user has the ability to manage tasks, appointments, customers and employees throught thier
+                respective management screens. By double clicking on a record, they will bring up the edit record dialog
+                for that type of object.
+            </p>
+
+            <img src="images/project1 images/editTaskImage.png">
+            <p>
+                Once the user edits the data, the program saves the updates the information in the database.
+            </p>
+            <img src="images/project1 images/UML Diagram.png" alt="UML class diagram">
+            <p>
+                Above is a diagram of the class structure of the enhanced project.
+            </p>
+            <img src="images/project1 images/Sequence Diagram.png" alt="Sequence diagram">
+            <p>
+                Sequence diagram for the appointment scheduling application.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

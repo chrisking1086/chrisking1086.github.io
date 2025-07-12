@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris King's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        h1,
+        h3 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-top: 15px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            margin-top: 40px;
+        }
+
+        .narrative {
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            text-align: justify;
+            line-height: 1.7;
+            padding: 20px 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .narrative h4 {
+            color: #007acc;
+            font-size: 1.2em;
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+            border-bottom: 1px dashed #e0e0e0;
+            padding-bottom: 5px;
+        }
+
+        .narrative ul {
+            list-style-type: disc;
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        .narrative ul li {
+            margin-bottom: 8px;
+        }
+
+        .screenshots {
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            text-align: center;
+            line-height: 1.7;
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        a {
+            display: inline-block;
+            margin: 30px auto 40px auto;
+            padding: 12px 25px;
+            background-color: #007acc;
+            color: #ffffff;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        a:hover {
+            background-color: #005f99;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        img {
+            display: block;
+            max-width: 800px;
+            width: 100%;
+            margin: 30px auto;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            font-weight: bold;
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+            color: #2c3e50;
+        }
+
+        .content-wrapper {
+            max-width: 900px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <h1>Project 2: Algorithms and Data Structures</h1>
+        <h3>Original Project: Grazio Rescue Animal Service</h3>
+        <div class="narrative">
+            <p>
+                For this second project, the original project was from an early course I was attending at SNHU: IT-145
+                Foundations in Computer Programming. The purpose of the project was to create an command line
+                application in Java that could be used to input rescue animals into an array list. It consisted of three
+                data classes:
+            <ul>
+                <li>
+                    RescueAnimal - Parent class
+                </li>
+                <li>
+                    Monkey - Child of RescueAnimal
+                </li>
+                <li>
+                    Dog - Child of RescueAnimal
+                </li>
+            </ul>
+            </p>
+            <p>
+                This project was an excersice in learning inheritance and object manipulation.
+            </p>
+            <a href="https://github.com/chrisking1086/SNHU-IT145" target="_blank">View Project on GitHub</a>
+        </div>
+        <h3>Narrative Describing Project and Planned Enhancements</h3>
+
+        <div class="narrative">
+            <p class="question">1. Briefly describe the project. What is it? When was it created?</p>
+            <p>
+                For category 2 I chose the Final Project from IT-145. The project was for a Rescue Animal Service that
+                developed a Java program to manage different rescue animals for a made up customer. It consisted of 4
+                files and was mainly focused on inheritance. The project had a Parent Rescue Animal class and two child
+                classes, Dog and Monkey. It also had a driver class for managing the lists of Rescue Animals, and stored
+                them in separate arrays. To access these lists the program would iterate through the entire list to find
+                the specific animal the customer needed to look for.
+            </p>
+
+            <p class="question">2. Justify the inclusion of the project in your ePortfolio.</p>
+            <p>
+                I chose this project to include in my portfolio to show off how much I have grown over the year or so
+                since I developed the initial project. The initial project was focused on data access through getters
+                and setters, saving the data into arrays and linear retrieval. I decided it would benefit from the
+                implementation of a Binary Search Tree data structure that would speed up retrieval times. I also
+                decided to port the program to C++ instead of Java, but this was mainly so I did not have two Java
+                applications as part of the portfolio.
+            </p>
+
+            <p class="question">3. Did you meet the course outcomes?</p>
+            <p>
+                With this enhancement I feel that I met the course outcome of:
+            <ul>
+                <li>
+                    Design and evaluate computing solutions that solve a given problem using algorithmic principles and
+                    computer science practices and standards appropriate to its solution, while managing the trade-offs
+                    involved in design choices (data structures and algorithms).
+                </li>
+            </ul>
+            </p>
+
+            <p class="question">4. Reflect on the process of enhancing and modifying the project.</p>
+            <p>
+                For this enhancement I chose to change the project from Java to C++. One major issue I ran into was that
+                I thought I remembered C++ a lot more than I truly remembered. It took me a few hours to stop staring at
+                the screen and remember the syntax and procedures of pointers for this enhancement. Eventually after
+                much rereading of some of my books, web articles and my previous ZyBooks I was able to remember what I
+                needed to do to implement a Binary Search Tree and how to manage class definitions, iostream and the
+                other specifics of C++ I had forgotten, even though I developed a program in C++ just 6 months ago. I
+                also ran into issues with Visual Studio’s auto complete function. It kept suggesting code that was not
+                what I wanted and there were a few times that I pressed tab accidentally and added a lot of code that I
+                did not want. Eventually I shut off the autocomplete “Assistance” and just focused on developing without
+                it.
+            </p>
+
+            <a href="https://github.com/chrisking1086/RescueAnimalService">View Project on GitHub</a>
+        </div>
+
+        <h3>Description of the Enhanced Project</h3>
+        <div class="narrative">
+            <h4>1. RescueAnimal Struct:</h4>
+            <ul>
+                <li>Serves as the base class for all rescue animals.</li>
+                <li>Contains common attributes like animalID, name, age, weight, acquisitionDate, acquisitionCountry,
+                    inServiceCountry, isReserved, animalType (enum: Dog, Monkey, Unknown), gender (enum: Male, Female,
+                    Unknown), and trainingStatus (enum: NotTrained, InTraining, Trained).</li>
+                <li>Includes public setter and getter methods for these attributes.</li>
+            </ul>
+            <h4>2. Dog Struct:</h4>
+            <ul>
+                <li>Inherits from RescueAnimal.</li>
+                <li>Adds a specific attribute: breed.</li>
+                <li>Its constructor automatically sets animalType to Dog.</li>
+            </ul>
+            <h4>3. Monkey Struct:</h4>
+            <ul>
+                <li>Inherits from RescueAnimal.</li>
+                <li>Adds specific attributes: tailLengthInches, bodyLengthInches, heightInches, and species (enum:
+                    Capuchin, Guenon, Macaque, Marmoset, SquirrelMonkey, Tamarin, Unknown).</li>
+                <li>Its constructor automatically sets animalType to Monkey.</li>
+            </ul>
+            <h4>4. Node Struct:</h4>
+            <ul>
+                <li>Represents a node in the Binary Search Tree.</li>
+                <li>Each node holds a RescueAnimal object and pointers to its left and right children.</li>
+            </ul>
+            <h4>5. BinarySearchTree Class:</h4>
+            <ul>
+                <li>Manages the collection of RescueAnimal objects using a BST data structure.</li>
+                <li>root: Pointer to the root node of the tree.</li>
+                <li>Constructor: Initializes the tree and populates it with a few sample dogs and monkeys for
+                    demonstration.</li>
+                <li>Destructor: Recursively deletes all nodes in the tree to prevent memory leaks (deleteTree method).
+                </li>
+                <li>addNode(Node* node, RescueAnimal animal): Recursively adds a new RescueAnimal to the tree based on
+                    its animalID (lexicographical comparison). It prevents adding animals with duplicate IDs.</li>
+                <li>search(const std::string& animalID): Searches for an animal by its ID in the BST. Returns a pointer
+                    to the RescueAnimal if found, nullptr otherwise.</li>
+                <li>printAllDogs(Node* node): Performs an in-order traversal to print details of all dogs in the tree.
+                </li>
+                <li>printAllMonkeys(Node* node): Performs an in-order traversal to print details of all monkeys in the
+                    tree, including their reservation status.</li>
+                <li>printUnreservedAnimals(Node* node): Performs an in-order traversal to print details of all animals
+                    (dogs and monkeys) that are *not* reserved.</li>
+                <li>insertDog(Dog dog) / insertMonkey(Monkey monkey): Wrapper methods to easily insert Dog or Monkey
+                    objects into the BST, handling the initial root assignment.</li>
+            </ul>
+            <h4>6. RescueAnimalService Class:</h4>
+            <ul>
+                <li>The main service class that orchestrates the application's logic.</li>
+                <li>Holds an instance of BinarySearchTree (bst).</li>
+                <li>Constructor: Seeds the random number generator (used for animalID generation and sample data).</li>
+                <li>Destructor: Deletes the bst object to free memory.</li>
+                <li>menu(): Presents a text-based menu to the user, allowing them to:
+                    <ul>
+                        <li>Intake new dogs or monkeys.</li>
+                        <li>Reserve an existing animal.</li>
+                        <li>Print lists of all dogs, all monkeys, or all unreserved animals.</li>
+                        <li>Exit the application.</li>
+                    </ul>
+                    Includes basic input validation.
+                </li>
+                <li>printAnimals(int displayType): Calls the appropriate printing method from the BinarySearchTree based
+                    on the displayType (1 for dogs, 2 for monkeys, 3 for unreserved).</li>
+                <li>intakeNewAnimal(int animalMenuType): Prompts the user for details to create a new Dog or Monkey
+                    object. It includes extensive input validation for various fields (name, age, weight, dates, gender,
+                    training status, species, dimensions). Once data is collected, it creates the animal object and
+                    inserts it into the BST.</li>
+                <li>generateAnimalID(const std::string& name): Creates a unique animal ID by combining the first few
+                    characters of the animal's name with a random number.</li>
+                <li>reserveAnimal(): Prompts the user for an animal ID, searches for it, and if found and not already
+                    reserved, sets its isReserved status to true.</li>
+            </ul>
+            <h4>7. main() Function:</h4>
+            <ul>
+                <li>The entry point of the program.</li>
+                <li>Creates an instance of RescueAnimalService.</li>
+                <li>Calls the menu() method to start the interactive service.</li>
+            </ul>
+        </div>
+
+        <div class="screenshots">
+            <h3>Screenshots of Enhanced project</h3>
+            <img src="images/project2 images/Screenshot 2025-06-21 184355.png"
+                alt="User Interface with inputing new dog">
+            <p class="narrative">
+                The User interface is a basic command line interface. When a new animal is entered into the system it is
+                inserted into the binary search tree.
+            </p>
+            <img src="images/project2 images/Screenshot 2025-06-21 190618.png" alt="Rescue Animal Data Structure">
+            <p class="narrative">
+                RescueAnimal Data Structure
+            </p>
+            <img src="images/project2 images/Screenshot 2025-06-21 190845.png" alt="Dog Data Structure">
+            <p class="narrative">
+                Dog Data Structure, child of RescueAnimal Structure
+            </p>
+            <img src="images/project2 images/Screenshot 2025-06-21 191024.png" alt="Monkey Data Structure">
+            <p class="narrative">
+                Monkey Data Structure, child of RescueAnimal Structure
+            </p>
+            <img src="images/project2 images/Screenshot 2025-06-21 191158.png" alt="Node Data Structure">
+            <p class="narrative">
+                Node Data Structure
+            </p>
+            <img src="images/project2 images/Screenshot 2025-06-21 203835.png" alt="BST search vs Linear search">
+            <p class="narrative">
+                Comparison of time taken to find record using BST search vs Linear search.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
