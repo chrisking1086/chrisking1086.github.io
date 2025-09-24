@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    min-height: 100vh;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.content-wrapper {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+
+h1, h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    padding: 15px 0 10px 0;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin-top: 40px;
+}
+
+.narrative, .screenshots {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    line-height: 1.7;
+    padding: 25px 30px;
+}
+
+.narrative {
+    text-align: justify;
+}
+
+.narrative h4 {
+    color: #007acc;
+    font-size: 1.2em;
+    margin: 1.5em 0 0.8em 0;
+    border-bottom: 1px dashed #e0e0e0;
+    padding-bottom: 5px;
+}
+
+.narrative ul {
+    list-style: disc;
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+.narrative ul li {
+    margin-bottom: 8px;
+}
+
+.screenshots {
+    text-align: center;
+    padding: 25px 30px;
+}
+
+a {
+    display: inline-block;
+    margin: 15px auto 15px auto;
+    padding: 5px 15px;
+    background-color: #007acc;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+a:hover {
+    background-color: #005f99;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+img {
+    display: block;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    font-weight: bold;
+    margin: 2em 0 0.5em 0;
+    color: #2c3e50;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #ffffff00;
+    border-radius: 0 px;
+    margin-bottom: 0px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 18px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 px 0;
+    display: block;
+    transition: color 0.2s;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+    color: #ffffff;
+}
